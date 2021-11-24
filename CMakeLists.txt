@@ -15,5 +15,7 @@ elseif(UNIX)
 	target_link_options(Lib1 PRIVATE -Wl,--whole-archive $<TARGET_FILE:Lib2> -Wl,--no-whole-archive)
 endif()
 
+add_dependencies(Lib1 Lib2)
+
 add_executable(Exe main.cpp)
 target_link_libraries(Exe PRIVATE Lib1)
