@@ -19,7 +19,6 @@ struct Init {
 	Init() {
 		for (int i = 0; i < arraySize; ++i) {
 			if ((i < N && !value(i)) || (i >= N && value(i))) {
-				// Валим gtest в abort
 //				throw "Oops";
 			}
 		}

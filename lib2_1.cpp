@@ -17,7 +17,6 @@ struct Init0
 {
 	Init0() {
       		if (!Lib1::IsInit()) {
-			// Валим gtest в abort
 //			throw "Oops";
 		}
 		printf("Call Lib2::Init()\n");		
